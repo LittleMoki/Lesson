@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+:root {
+	--red-bg: #23425F;
+	--text1: 18px;
+	--text-font1: 500;
+}
+div {
+	display: flex;
+	flex-direction: column;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	position: relative;
+	object-fit: cover;
+}
+.box::after {
+	content: '';
+	width: 100px;
+	height: 100px;
+	background: var(--red-bg);
+	position: absolute;
+	top: 0;
+	right: -100%;
+}
+.box::before {
+	content: '';
+	width: 100px;
+	height: 100px;
+	background: green;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+}
+
+:hover ;
